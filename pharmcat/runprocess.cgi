@@ -24,11 +24,20 @@ def main():
         with open('/var/www/html/log.txt', 'w') as log_file:
             subprocess.run(['bcftools', 'convert', '--tsv2vcf', file_path, '-f', '/var/www/html/Liftover/GRCh3.fa', '-s', 'SampleName', '-o', '/var/www/html/Liftover/input/sample.vcf'], stdout=log_file, stderr=log_file)
             subprocess.run(['python3', '/var/www/html/Liftover/lifter.py'], stdout=log_file, stderr=log_file)
-            subprocess.run(['python3', '/var/www/html/preprocessor/pharmcat_vcf_preprocessor.py', '-vcf', '/var/www/html/Liftover/input/lifted_sample.vcf'], stdout=log_file, stderr=log_file)
-        
-        #Run PharmCat Pipeline
+            
+            lifted_vcf_path = '/var/www/html/Liftover/input/lifted_sample.vcf'
+            compressed_vcf_path = lifted_vcf_path + '.gz'
+            subprocess.run(['bgzip', '-c', lifted_vcf_path], stdout=open(compressed_vcf_path, 'wb'), stderr=log_file)
+
+            # Index the compressed VCF file
+            subprocess.run(['tabix', '-p', 'vcf', compressed_vcf_path], stdout=log_file, stderr=log_file)
+
+            # Run the preprocessor using the compressed VCF file
+            subprocess.run(['python3', '/var/www/html/preprocessor/pharmcat_vcf_preprocessor.py', '-vcf', compressed_vcf_path], stdout=log_file, stderr=log_file)
+            
+            #Run PharmCat Pipeline
             result = subprocess.run([
-                'java', '-jar', '/var/www/html/pharmcat/pharmcat.jar', '-vcf', '/var/www/html/Liftover/input/lifted_sample.vcf.bgz', '-o', '/var/www/html/output'
+                'java', '-jar', '/var/www/html/pharmcat/pharmcat.jar', '-vcf', '/var/www/html/Liftover/input/lifted_sample.preprocessed.vcf.bgz', '-o', '/var/www/html/output'
             ], stdout=log_file, stderr=log_file)
 
             if result.returncode != 0:

@@ -1,0 +1,62 @@
+chr10:94942205
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CAATGGAAAGA)
+chr10:94949281
+	Discarded genotype at this position because REF in VCF (G) does not match expected reference (GA)
+chr13:48037782
+	Discarded genotype at this position because REF in VCF (A) does not match expected reference (AGGAGTC)
+chr13:48037825
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr13:48040977
+	Discarded genotype at this position because REF in VCF (G) does not match expected reference (GA)
+chr13:48041103
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr19:38499644
+	Discarded genotype at this position because REF in VCF (T) does not match expected reference (TGGA)
+chr1:97450065
+	Discarded genotype at this position because REF in VCF (T) does not match expected reference (TG)
+chr1:97740410
+	Discarded genotype at this position because REF in VCF (G) does not match expected reference (GATGA)
+chr22:42126656
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42126980
+	Discarded genotype at this position because REF in VCF (T) does not match expected reference (TGA)
+chr22:42127530
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42127845
+	Discarded genotype at this position because REF in VCF (G) does not match expected reference (GCACATCCGGATGTAGGATC)
+chr22:42127962
+	Discarded genotype at this position because REF in VCF (T) does not match expected reference (TG)
+chr22:42128173
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CCTT)
+chr22:42128198
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CTCAG)
+chr22:42128200
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42128211
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42128241
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CT)
+chr22:42128248
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CAGTT)
+chr22:42128324
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CAGG)
+chr22:42128814
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42128818
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42128927
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42129083
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CA)
+chr22:42130654
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr2:233760233
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CAT)
+chr6:18149032
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr7:99652770
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr7:99758183
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr7:99766411
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position

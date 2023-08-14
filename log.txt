@@ -1,0 +1,120 @@
+Rows total: 	571
+Rows skipped: 	0
+Sites written: 	571
+Missing GTs: 	0
+Hom RR: 	555
+Het RA: 	16
+Hom AA: 	0
+Het AA: 	0
+PharmCAT VCF Preprocessor version: 2.5.0
+Saving output to /var/www/html/Liftover/input
+
+Processing /var/www/html/Liftover/input/lifted_sample.vcf.gz ...
+  * WARNING: "chr1:97450065 REF=T ALT=G" does not match PharmCAT expectation of REF at "chr1:97450065 REF=TG ALT=T"
+  * WARNING: "chr1:97740410 REF=G ALT=A" does not match PharmCAT expectation of REF at "chr1:97740410 REF=GATGA ALT=G"
+  * WARNING: "chr2:233760233 REF=C ALT=A" does not match PharmCAT expectation of ALT at "chr2:233760233 REF=CAT ALT=C"
+  * WARNING: "chr2:233760233 REF=C ALT=A" does not match PharmCAT expectation of ALT at "chr2:233760233 REF=C ALT=CAT"
+  * WARNING: "chr2:233760233 REF=C ALT=A" does not match PharmCAT expectation of ALT at "chr2:233760233 REF=C ALT=CATAT"
+  * WARNING: ignore "chr6:18149032 REF=C ALT=." which is not a valid GT format for INDELs
+  * WARNING: ignore "chr7:99652770 REF=T ALT=." which is not a valid GT format for INDELs
+  * WARNING: ignore "chr7:99758183 REF=G ALT=." which is not a valid GT format for INDELs
+  * WARNING: ignore "chr7:99766411 REF=G ALT=." which is not a valid GT format for INDELs
+  * WARNING: "chr10:94942205 REF=C ALT=A" does not match PharmCAT expectation of REF at "chr10:94942205 REF=CAATGGAAAGA ALT=C"
+  * WARNING: "chr10:94949281 REF=G ALT=A" does not match PharmCAT expectation of REF at "chr10:94949281 REF=GA ALT=G"
+  * WARNING: "chr13:48037782 REF=A ALT=G" does not match PharmCAT expectation of ALT at "chr13:48037782 REF=AGGAGTC ALT=A"
+  * WARNING: "chr13:48037782 REF=A ALT=G" does not match PharmCAT expectation of ALT at "chr13:48037782 REF=A ALT=AGGAGTC"
+  * WARNING: ignore "chr13:48037825 REF=C ALT=." which is not a valid GT format for INDELs
+  * WARNING: "chr13:48040977 REF=G ALT=A" does not match PharmCAT expectation of REF at "chr13:48040977 REF=GA ALT=G"
+  * WARNING: ignore "chr13:48041103 REF=T ALT=." which is not a valid GT format for INDELs
+  * WARNING: "chr19:38499644 REF=T ALT=G" does not match PharmCAT expectation of REF at "chr19:38499644 REF=TGGA ALT=T"
+  * WARNING: ignore "chr22:42126656 REF=C ALT=." which is not a valid GT format for INDELs
+  * WARNING: "chr22:42126980 REF=T ALT=G" does not match PharmCAT expectation of REF at "chr22:42126980 REF=TGA ALT=T"
+  * WARNING: ignore "chr22:42127530 REF=G ALT=." which is not a valid GT format for INDELs
+  * WARNING: "chr22:42127845 REF=G ALT=C" does not match PharmCAT expectation of REF at "chr22:42127845 REF=GCACATCCGGATGTAGGATC ALT=G"
+  * WARNING: "chr22:42127962 REF=T ALT=G" does not match PharmCAT expectation of REF at "chr22:42127962 REF=TG ALT=T"
+  * WARNING: ignore "chr22:42128173 REF=C ALT=." which is not a valid GT format for INDELs
+  * WARNING: "chr22:42128198 REF=C ALT=T" does not match PharmCAT expectation of REF at "chr22:42128198 REF=CTCAG ALT=C"
+  * WARNING: ignore "chr22:42128200 REF=C ALT=." which is not a valid GT format for INDELs
+  * WARNING: ignore "chr22:42128211 REF=C ALT=." which is not a valid GT format for INDELs
+  * WARNING: "chr22:42128241 REF=C ALT=T" does not match PharmCAT expectation of REF at "chr22:42128241 REF=CT ALT=C"
+  * WARNING: "chr22:42128248 REF=C ALT=A" does not match PharmCAT expectation of REF at "chr22:42128248 REF=CAGTT ALT=C"
+  * WARNING: "chr22:42128324 REF=C ALT=A" does not match PharmCAT expectation of REF at "chr22:42128324 REF=CAGG ALT=C"
+  * WARNING: ignore "chr22:42128814 REF=T ALT=." which is not a valid GT format for INDELs
+  * WARNING: ignore "chr22:42128818 REF=T ALT=." which is not a valid GT format for INDELs
+  * WARNING: ignore "chr22:42128927 REF=T ALT=." which is not a valid GT format for INDELs
+  * WARNING: "chr22:42129083 REF=C ALT=A" does not match PharmCAT expectation of REF at "chr22:42129083 REF=CA ALT=C"
+  * WARNING: ignore "chr22:42130654 REF=C ALT=." which is not a valid GT format for INDELs
+Adding back non-PGx variants at PGx positions...
+* Cataloging 255 missing positions in /var/www/html/Liftover/input/lifted_sample.missing_pgx_var.vcf
+
+Generated PharmCAT-ready VCF: /var/www/html/Liftover/input/lifted_sample.preprocessed.vcf.bgz
+
+Done.
+Preprocessed input VCF in 0.30 seconds
+chr10:94942205
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CAATGGAAAGA)
+chr10:94949281
+	Discarded genotype at this position because REF in VCF (G) does not match expected reference (GA)
+chr13:48037782
+	Discarded genotype at this position because REF in VCF (A) does not match expected reference (AGGAGTC)
+chr13:48037825
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr13:48040977
+	Discarded genotype at this position because REF in VCF (G) does not match expected reference (GA)
+chr13:48041103
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr19:38499644
+	Discarded genotype at this position because REF in VCF (T) does not match expected reference (TGGA)
+chr1:97450065
+	Discarded genotype at this position because REF in VCF (T) does not match expected reference (TG)
+chr1:97740410
+	Discarded genotype at this position because REF in VCF (G) does not match expected reference (GATGA)
+chr22:42126656
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42126980
+	Discarded genotype at this position because REF in VCF (T) does not match expected reference (TGA)
+chr22:42127530
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42127845
+	Discarded genotype at this position because REF in VCF (G) does not match expected reference (GCACATCCGGATGTAGGATC)
+chr22:42127962
+	Discarded genotype at this position because REF in VCF (T) does not match expected reference (TG)
+chr22:42128173
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CCTT)
+chr22:42128198
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CTCAG)
+chr22:42128200
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42128211
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42128241
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CT)
+chr22:42128248
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CAGTT)
+chr22:42128324
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CAGG)
+chr22:42128814
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42128818
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42128927
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr22:42129083
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CA)
+chr22:42130654
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr2:233760233
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CAT)
+chr6:18149032
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr7:99652770
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr7:99758183
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+chr7:99766411
+	Genotype at this position has no ALT allele and an indel or repeat is expected. PharmCAT cannot validate this position
+Saving VCF warnings to /var/www/html/output/lifted_sample.match_warnings.txt
+Saving named allele matcher JSON results to /var/www/html/output/lifted_sample.match.json
+Saving phenotyper JSON results to /var/www/html/output/lifted_sample.phenotype.json
+Saving reporter HTML results to /var/www/html/output/lifted_sample.report.html
+Done.
