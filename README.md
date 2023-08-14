@@ -7,7 +7,7 @@ The accessable_types.txt file is the test file that outputs all avaliable annota
 You can use it on the html to show sample output. 
 Some older versions of the 23andme format don't work - i'm looking at updating this at some point. 
 
-It's pretty straightforward to run - access the html and upload your file and the report will output in the following screen.
+It's pretty straightforward to run - access the IP:form.html from the google compute server and upload your file and the report will output in the following screen.
 
 Authorship for the preprocessing unit and the pharmcat tool itself go to their respective authors. 
 
