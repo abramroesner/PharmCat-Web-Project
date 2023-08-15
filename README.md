@@ -33,7 +33,7 @@ Reference files: Human Reference Genome (GRCh37 and/or GRCh38), PharmCAT PGx var
 Installation
 Clone the repository or download the project files to your Google Cloud Compute server.
 
-Install the required libraries and tools:
+Install the required libraries:
 
 alabaster==0.7.8
 attrs==19.3.0
@@ -170,7 +170,7 @@ Anurag Verma	University of Pennsylvania
 Shefali Setia Verma	University of Pennsylvania
 Karl Keat	University of Pennsylvania
 
-Please report any issues or questions to the issue tracker or contact the project maintainers.
+Please report any issues or questions
 
 License
-Include details about the project's license here, if applicable.
+MIT standard
