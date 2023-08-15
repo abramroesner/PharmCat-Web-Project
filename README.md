@@ -15,7 +15,7 @@ This project will most likely turn into a website at some point.
 Thanks!
 -AR
 
-Overview
+OVERVIEW
 File Upload: Accepts 23andMe data in .txt format.
 Conversion to VCF: Converts the 23andMe data to VCF (Variant Call Format).
 Liftover: Changes genomic coordinates from one assembly to another (e.g., hg19 to hg38).
@@ -23,14 +23,16 @@ Realignment: Aligns chromasomes for preprocessing
 Preprocessing: Prepares the VCF file for use by PharmCAT.
 PharmCAT Processing: Generates pharmaceutical annotations.
 
-Prerequisites
-Google Cloud Compute server with sufficient resources (CPU, RAM, storage).
+PREREQ
+Google Cloud Compute server with sufficient resources (CPU 1.8ghz, RAM 4gb, storage 10gb).
 Python 3.x installed.
-Required tools: bcftools, bgzip, HTSLIB and tabix.
+Java v17 minimum.
+Apache2 Framework on Ubuntu.
+Required tools: bcftools, bgzip, HTSLIB, and tabix.
 PharmCAT, preprocessor, and pyliftover libraries.
 Reference files: Human Reference Genome (GRCh37 and/or GRCh38), PharmCAT PGx variants, and chain file for liftover.
 
-Installation
+INSTALLATION
 Clone the repository or download the project files to your Google Cloud Compute server.
 
 Install the required libraries:
